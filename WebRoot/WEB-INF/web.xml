@@ -9,4 +9,19 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <!-- 手动导入springmvc的jar包 -->
+  <servlet>
+  	<servlet-name>springmvc</servlet-name>
+  	<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+  	<!-- contextConfigLocation不是必须的， 如果不配置contextConfigLocation，DispatcherServlet会默认加载[servlet-name]-servlet.xml文件。 -->
+	<init-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>classpath:springmvc.xml</param-value>
+	</init-param>
+	<load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>springmvc</servlet-name>
+  	<url-pattern>*.do</url-pattern>
+  </servlet-mapping>
 </web-app>
