@@ -1,0 +1,22 @@
+		MySQL数据库定义
+	1.	库名： ykt_mis_0.01
+		用户名：root
+		密码：root
+		
+		用户表
+		users 字段 如下：
+			uname  --  用户名
+			pwd	   --   密码
+			
+		IP资源表
+		IP_Tables 字段如下：
+			CREATE TABLE `ip_tables` (
+  			`id` varchar(32) NOT NULL DEFAULT '主键ID',
+  			`ip` varchar(16) NOT NULL DEFAULT 'ip资源',
+  			`used` varchar(2) DEFAULT '' COMMENT 'ip是否使用标志',
+  			`ps` blob COMMENT 'ip使用使用详细情况',
+  			`delete` varchar(2) DEFAULT NULL COMMENT '删除标记',
+  				PRIMARY KEY (`id`)
+			) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+			
+	
