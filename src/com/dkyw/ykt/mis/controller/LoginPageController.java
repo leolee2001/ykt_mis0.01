@@ -8,7 +8,7 @@ import com.dkyw.ykt.mis.pojo.User;
 import com.dkyw.ykt.mis.service.UserService;
 
 @Controller
-public class IndexPageController {
+public class LoginPageController {
 	
 	@RequestMapping("/")
 	public String IndexPage(){
