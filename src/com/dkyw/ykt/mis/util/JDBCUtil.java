@@ -1,4 +1,4 @@
-package com.dkyw.ykt.mis.dao.util;
+package com.dkyw.ykt.mis.util;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

@@ -5,8 +5,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import com.dkyw.ykt.mis.dao.util.JDBCUtil;
 import com.dkyw.ykt.mis.pojo.User;
+import com.dkyw.ykt.mis.util.JDBCUtil;
 
 public class UserDAO {
 
